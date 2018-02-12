@@ -5,9 +5,40 @@ body{
      font-family: Tahoma;
 
 }
-button when(1=1){
-    color:black;
+
+
+
+
+.loop(@a);
+
+@a: 5;
+
+.loop (@a) when (@a > 0) {
+  .cls {
+    background-color: #FFB4D4;
+  }
+  .loop(@a - 1);
 }
+
+
+
+
+
+.cls {
+
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  display:inline-block;
+
+}
+
+
+
+
+
+
+
 @white_color: #FFFFFF;
 @ligth_blue_color:#C6CAED;
 @max-width:100%;
