@@ -1,46 +1,20 @@
-body{
-     background-color:#FFEAB8;
-     margin:0;
-     font-size: 15px;
-     font-family: Tahoma;
-
-}
-
-
-
-
-.loop(@a);
-
-@a: 5;
-
-.loop (@a) when (@a > 0) {
+.loop(@quantity);
+@quantity: 5;
+.loop (@quantity) when (@quantity > 0) {
   .cls {
-    background-color: #FFB4D4;
+    background-color: #B7C9FF;
   }
-  .loop(@a - 1);
+  .loop(@quantity - 1);
 }
-
-
-
-
-
 .cls {
-
   width: 100px;
   height: 30px;
-  margin: 10px;
+  margin-bottom: 15px;
+  margin-right:15px;
   display:inline-block;
-
 }
-
-
-
-
-
-
-
-@white_color: #FFFFFF;
-@ligth_blue_color:#C6CAED;
+@block_color: rgb(255,255,255);
+@border_color:rgb(198,202,237);
 @max-width:100%;
 .border{
     border:1px solid #C6CAED;   
@@ -48,6 +22,12 @@ body{
 .border_bottom{
     border-bottom: 3px solid #C6CAED;
 
+}
+body{
+     background-color: rgb(255,234,184) ;
+     margin:0;
+     font-size: 15px;
+     font-family: Tahoma;
 }
 a {
     text-decoration:none;
@@ -60,7 +40,7 @@ a {
 .account{
     float:left;
     width:30%;
-    background: @white_color;
+    background: @block_color;
     height:1000px;
     &:extend(.border);
     height: 300px;
@@ -144,29 +124,35 @@ height: 100px;
     position: absolute;
     z-index:2;
 }
-.new .main-content{
-    width: 95%;
-    font-size: 13px;
-    padding-left:10px;
-    padding-right: 10px;
+.new{ 
+    .main-content{
+        width: 95%;
+        font-size: 13px;
+        padding-left:10px;
+        padding-right: 10px;
+    }
 }
 .acc-name{
 
     padding-bottom: 10px;
     padding-top: 15px;
-    &:extend(.border_bottom);
+    .border_bottom;
 }
-.lower-acc .link{
+.lower-acc{ 
+    .link{
 
-    padding:10px;
-    background-color:#C6CAED;
-    border-bottom: 3px solid #B0E0E6;
-    border-radius: 5px;
-    width:100px;
-    opacity:0.8;
+        padding:10px;
+        background-color:#C6CAED;
+        border-bottom: 3px solid #B0E0E6;
+        border-radius: 5px;
+        width:100px;
+        opacity:0.8;
+    }
 }
-.lower-acc .link:hover{
-    opacity:1;
+.lower-acc{ 
+    .link:hover{
+        opacity:1;
+    }
 }
 
 
@@ -181,17 +167,22 @@ height: 100px;
 .language{
     width:@max-width; 
     padding:5px; 
-    background:@white_color;
+    background:@block_color;
     margin:0 auto 0;
     border-radius:0  15px 0 15px;
     position:fixed;
     padding:0;
 }
 
-.language li ul.dropdownmenu{
-    display: none;
-    padding-left: 0;
-    list-style-type: none;
+.language{
+
+    li{
+        ul.dropdownmenu{
+        display: none;
+        padding-left: 0;
+        list-style-type: none;
+        }
+    }
 
 }
 .language li:hover .dropdownmenu{
@@ -217,7 +208,7 @@ height: 100px;
     
     border: none;
     padding: 10px;
-    background-color: @white_color;
+    background-color: @block_color;
 }
 .language a {
     text-align: left;
@@ -225,11 +216,11 @@ height: 100px;
     text-decoration: none;
 }
 .about a:hover{
-    background-color:@ligth_blue_color;
+    background-color:@border_color;
 }
 .home:hover{
     
-    background-color:@ligth_blue_color;
+    background-color:@border_color;
 }
 .corner-buttons{
     padding:10px;
@@ -246,7 +237,7 @@ height: 100px;
 
 .home:hover{
     
-    background-color:@ligth_blue_color;
+    background-color:@border_color;
 }
 
 
@@ -260,7 +251,7 @@ height: 100px;
     float: right;
     width: 30%;
     
-    background-color: @white_color;
+    background-color: @block_color;
     padding:10px;
     width: 230px;
     &:extend(.border);
@@ -274,7 +265,7 @@ height: 100px;
 }
 .info input.submit{
     border:3px solid #018391;
-    background-color: @white_color;
+    background-color: @block_color;
     border-radius:10px;
     width:70px;
     height:30px;
@@ -314,7 +305,7 @@ height: 100px;
     background: #FFFAFA;
     padding:10px;
     width:@max-width;
-    &:extend(.border);
+    .border;
 }
 
 .new-inside{

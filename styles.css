@@ -1,28 +1,23 @@
-body {
-  background-color: #FFEAB8;
-  margin: 0;
-  font-size: 15px;
-  font-family: Tahoma;
+.cls {
+  background-color: #B7C9FF;
 }
 .cls {
-  background-color: #FFB4D4;
+  background-color: #B7C9FF;
 }
 .cls {
-  background-color: #FFB4D4;
+  background-color: #B7C9FF;
 }
 .cls {
-  background-color: #FFB4D4;
+  background-color: #B7C9FF;
 }
 .cls {
-  background-color: #FFB4D4;
-}
-.cls {
-  background-color: #FFB4D4;
+  background-color: #B7C9FF;
 }
 .cls {
   width: 100px;
   height: 30px;
-  margin: 10px;
+  margin-bottom: 15px;
+  margin-right: 15px;
   display: inline-block;
 }
 .border,
@@ -31,16 +26,20 @@ body {
 .new,
 .english select,
 .sign-up,
-.info input.text,
-.q-new {
+.info input.text {
   border: 1px solid #C6CAED;
 }
 .border_bottom,
-.acc-name,
 .gender,
 .enter,
 .link-a {
   border-bottom: 3px solid #C6CAED;
+}
+body {
+  background-color: #ffeab8;
+  margin: 0;
+  font-size: 15px;
+  font-family: Tahoma;
 }
 a {
   text-decoration: none;
@@ -52,7 +51,7 @@ a {
 .account {
   float: left;
   width: 30%;
-  background: #FFFFFF;
+  background: #ffffff;
   height: 1000px;
   height: 300px;
 }
@@ -135,6 +134,7 @@ a {
 .acc-name {
   padding-bottom: 10px;
   padding-top: 15px;
+  border-bottom: 3px solid #C6CAED;
 }
 .lower-acc .link {
   padding: 10px;
@@ -156,7 +156,7 @@ a {
 .language {
   width: 100%;
   padding: 5px;
-  background: #FFFFFF;
+  background: #ffffff;
   margin: 0 auto 0;
   border-radius: 0  15px 0 15px;
   position: fixed;
@@ -187,7 +187,7 @@ a {
 .about {
   border: none;
   padding: 10px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .language a {
   text-align: left;
@@ -195,10 +195,10 @@ a {
   text-decoration: none;
 }
 .about a:hover {
-  background-color: #C6CAED;
+  background-color: #c6caed;
 }
 .home:hover {
-  background-color: #C6CAED;
+  background-color: #c6caed;
 }
 .corner-buttons {
   padding: 10px;
@@ -212,7 +212,7 @@ a {
   border-radius: 5px;
 }
 .home:hover {
-  background-color: #C6CAED;
+  background-color: #c6caed;
 }
 .want-to-know {
   float: left;
@@ -221,7 +221,7 @@ a {
 .sign-up {
   float: right;
   width: 30%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 10px;
   width: 230px;
 }
@@ -233,7 +233,7 @@ a {
 }
 .info input.submit {
   border: 3px solid #018391;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 10px;
   width: 70px;
   height: 30px;
@@ -263,6 +263,7 @@ a {
   background: #FFFAFA;
   padding: 10px;
   width: 100%;
+  border: 1px solid #C6CAED;
 }
 .new-inside {
   padding-bottom: 20px;
