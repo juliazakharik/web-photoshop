@@ -32,7 +32,7 @@
 .border_bottom,
 .gender,
 .enter,
-.link-a {
+#link-a {
   border-bottom: 3px solid #C6CAED;
 }
 body {
@@ -59,7 +59,7 @@ a {
   padding-left: 20px;
   padding-right: 10px;
 }
-.upper-acc {
+#upper-acc {
   width: 100%;
   height: 100px;
   padding-bottom: 20px;
@@ -70,7 +70,7 @@ a {
   text-align: center;
   width: 50%;
 }
-.photo {
+#photo {
   width: 40%;
   float: left;
   margin-left: 20px;
@@ -80,7 +80,7 @@ a {
   height: 100px;
   border-radius: 100px;
 }
-.photo img {
+#photo img {
   height: 100px;
 }
 .lower-acc {
@@ -108,22 +108,14 @@ a {
   border: 2px solid red;
   background: #FFFAFA;
 }
-.main-photo img {
-  height: 250px;
-}
 .main-photo {
   width: 100%;
   height: 250px;
   text-align: center;
   padding-top: 20px;
 }
-.new .link {
-  text-align: center;
-  padding: 15px;
-  font-size: 20px;
-  width: 100%;
-  position: absolute;
-  z-index: 2;
+.main-photo img {
+  height: 250px;
 }
 .new .main-content {
   width: 95%;
@@ -131,12 +123,13 @@ a {
   padding-left: 10px;
   padding-right: 10px;
 }
-.acc-name {
+#acc-name {
   padding-bottom: 10px;
   padding-top: 15px;
   border-bottom: 3px solid #C6CAED;
 }
-.lower-acc .link {
+.lower-acc #link,
+.new #link {
   padding: 10px;
   background-color: #C6CAED;
   border-bottom: 3px solid #B0E0E6;
@@ -144,7 +137,7 @@ a {
   width: 100px;
   opacity: 0.8;
 }
-.lower-acc .link:hover {
+.lower-acc #link:hover {
   opacity: 1;
 }
 .corner-menu {
@@ -162,13 +155,18 @@ a {
   position: fixed;
   padding: 0;
 }
+.language a {
+  text-align: left;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.language li:hover .dropdownmenu {
+  display: block;
+}
 .language li ul.dropdownmenu {
   display: none;
   padding-left: 0;
   list-style-type: none;
-}
-.language li:hover .dropdownmenu {
-  display: block;
 }
 .dropdownmenu {
   background-color: #f9f9f9;
@@ -189,11 +187,6 @@ a {
   padding: 10px;
   background-color: #ffffff;
 }
-.language a {
-  text-align: left;
-  padding: 14px 20px;
-  text-decoration: none;
-}
 .about a:hover {
   background-color: #c6caed;
 }
@@ -211,9 +204,6 @@ a {
 .english select {
   border-radius: 5px;
 }
-.home:hover {
-  background-color: #c6caed;
-}
 .want-to-know {
   float: left;
   width: 60%;
@@ -225,11 +215,8 @@ a {
   padding: 10px;
   width: 230px;
 }
-.info input.text {
-  border-radius: 5px;
-  height: 22px;
-  width: 220px;
-  font-size: 13px;
+.info {
+  padding-bottom: 10px;
 }
 .info input.submit {
   border: 3px solid #018391;
@@ -238,8 +225,11 @@ a {
   width: 70px;
   height: 30px;
 }
-.info {
-  padding-bottom: 10px;
+.info input.text {
+  border-radius: 5px;
+  height: 22px;
+  width: 220px;
+  font-size: 13px;
 }
 .container-1 {
   padding-left: 15%;
@@ -275,7 +265,7 @@ a {
 .upper-link-a {
   width: 100%;
 }
-.link-a {
+#link-a {
   text-align: center;
 }
 @media screen and (max-width: 900px) {
