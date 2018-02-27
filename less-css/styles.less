@@ -41,9 +41,9 @@ a {
     float:left;
     width:30%;
     background: @block_color;
-    height:1000px;
+    height:300px;
     &:extend(.border);
-    height: 300px;
+   
 }
 .block{
     padding-left: 20px;
@@ -59,7 +59,6 @@ a {
     padding-right: 10px;
     text-align: center;
     width:50%;
-
 }
 
 .photo{
@@ -77,23 +76,23 @@ a {
     
 }
 
+
 .navlist {
     position: relative;
-}
-
-.navlist li {
+    li {
     margin: 0;
     padding: 0;
     list-style: none;
     position: absolute;
     top: 0;
 }
-
-.navlist li, .navlist a {
+}
+.navlist{ 
+    li,  a {
     height: 110px;
     display: block;
 }
-
+}
 .img-1 {
     left: 0px;
     width: 210px;
@@ -106,10 +105,7 @@ a {
     background: url('news.gif') -210px 0;
 }
 
-.header-news ul li{
-    width:100%;
-    height:250px;
-}
+
 
 
 
@@ -123,7 +119,7 @@ a {
     width: 65%;
 }
 .search{
-    text-align: center;
+
     padding-top:10px;
     padding-bottom: 20px;
     width:@max-width;
